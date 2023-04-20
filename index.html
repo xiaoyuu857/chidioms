@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+<section class="banner">
+    <nav>
+        <a href="index.html"><img src="logo.png" class="logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" 
+                    onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth', })">About</a></li>
+                <li><a href="#" 
+                    onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="content">
+        <h1>LEARN CHINESE IDIOMS</h1>
+        <p>Get confortable with the most used idioms by the natives</p>
+        <div>
+            <button type="button"><span></span>GET STARTED</button>
+            <button type="button"><span></span>DOWNLOAD</button>
+        </div>
+    </div>
+    
+</section>
+<!-----Javascript for Toggle Menu----->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+<section class="course">
+    <h1>Our Course</h1>
+    <p>Welcome to this Chinese Idioms course, in this course we will learn 100 most commonly used Chinese idioms through a quiz and tracking your process</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Requirements</h3>
+            <p>Prefebably the students have taken Mandarin Chinese in college or has a begginer level and students that are interested in Chinese language and culture.</p>
+        </div>
+        <div class="course-col">
+            <h3>Description</h3>
+            <p>Chinese idioms were originated from the ancient Chinese historical and philosophical works, crystallizing the wisdom of Chinese culture through thousands of years. They have become familiar daily language of today spoken by ordinary Chinese people in daily life.</p>
+        </div>
+        <div class="course-col">
+            <h3>Who is this course for</h3>
+            <p>Aimed for students who are interested in learning Chinese language or that are interested in Chinese culture, especially the four major schools of classical philosophy.</p>
+        </div>
+    </div>
+</section>
+<section class="about", id="about">
+    <h1>About</h1>
+    <p>I am a student in La Salle Girona who has a big passion for the Chinese language and its culture. As a Chinese born overseas, I am not fluent and lack vocabulary, specially on Chinese Idioms, which are used daily. With a little research, I found out that most of the Chinese people like me also struggle with Idioms, so I decided to make a small program to learn the most used Chinese Idioms.</p>
+</section>
+<div class="contact" id="contact">
+<h1>Contact</h1>
+<p>We would love to respond to your queries <br>Feel free to get in touch with us</p>
+<div class="contact-box">
+    <div class="contact-left">
+        <h3>Send your request</h3>
+   <form>
+
+        <div class="input-row">
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" placeholder="Juanjo Conejo">
+            </div>
+            <div class="input-group">
+                <label>Phone</label>
+                <input type="text" placeholder="+34 685 166 898">
+            </div>
+        </div>
+        <div class="input-row">
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="juanjoconejo@gmail.com">
+            </div>
+            <div class="input-group">
+                <label>Subject</label>
+                <input type="text" placeholder="Product Demo">
+            </div>
+        </div>
+
+        <label">Message</label>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit">SEND</button>
+    </form>
+    </div>
+    <div class="contact-right">
+        <h3>Reach us</h3> 
+        <table>
+            <tr>
+                <td>Email</td>
+                <td>contactus@example.com</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>+34 685 166 898</td>
+            </tr>
+            <tr>
+                <td>Adress</td>
+                <td>Carrer de Sant Joan Bta. la Salle, 12, 17002 Girona</td>
+            </tr>
+        </table>
+    </div>
+ </div>
+</div>
+</body>
+</html>
